@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <link rel="stylesheet" id="fontawesome-css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css?ver=1.3.3" type="text/css" media="all">
+        <meta charset="UTF-8">
+        <title>Photography — Sofya Alexeeva</title>
+    </head>
+    <body>
+        <div class="background">
+            <div class="container">
+                <header>
+                    <div class='logo'>
+                        <div class="logo-container">              
+                            <img src="{% static "Logo-1.jpg" %}" alt="" width="">
+                            <div class="logo-gradient gradientText is__animated">photo</div>
+                        </div>
+
+                    </div>
+                    <div class="sentence">Фотограф-анималист из Новосибирска</div>
+                    <div class="buttons">
+                        <a class="underline underline-1" href=""><div>Фотографии</div></a>
+                        <a class="underline underline-2" href=""><div>Открытки</div></a>
+                        <a class="underline underline-3" href=""><div>Обо мне</div></a>
+                        <a class="underline underline-4" href=""><div>Контакты</div></a>     
+                    </div>
+                </header>
+                    <div class="box_main">
+                        <div class="box_pict">
+                            <div class="image">
+                                <img src="{{ photos.0.image.url }}" alt="" width="">
+                            </div>
+                            <div class="image">
+                                <img src="{{ photos.1.image.url }}" alt="">
+                            </div>
+                            <div class="image">
+                                <img src="{{ photos.2.image.url }}" alt="">
+                            </div>
+                        </div>
+                        <div class="box_pict">
+                            <div class="image">
+                                <img src="{{ photos.3.image.url }}" alt="">
+                            </div>
+                            <div class="image">
+                                <img src="{{ photos.4.image.url }}" alt="">
+                            </div>
+                            <div class="image">
+                                <img src="{{ photos.5.image.url }}" alt="">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>
