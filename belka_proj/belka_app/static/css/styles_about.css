@@ -144,6 +144,8 @@ body {color: #585F77;
     width: 1120px;
     height: 700px;
     background-color: white;
+    display: flex;
+    position: relative;
 }
 
 .text_box{
@@ -153,4 +155,9 @@ body {color: #585F77;
     background-origin: content-box;
     border: #8F9ABD;
     border-width: 1px;
+    position: absolute;
+    top: 160px;
+    right: 220px;
 }
+
+
