@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
         <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-        <link rel="stylesheet" id="fontawesome-css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css?ver=1.3.3" type="text/css" media="all">
+        <link rel="icon" type="image/png" sizes="32x32" href="{% static './favicon.png' %}">
         <meta charset="UTF-8">
         <title>Photography — Sofya Alexeeva</title>
     </head>
@@ -17,14 +17,14 @@
                 <header>
                     <div class='logo'>
                         <div class="logo-container">              
-                            <img src="{% static "Logo-1.jpg" %}" alt="" width="">
+                            <img src="{% static "Logo.jpg" %}" alt="" width="">
                             <div class="logo-gradient gradientText is__animated">photo</div>
                         </div>
-
+                        <p></p>
                     </div>
                     <div class="sentence">Фотограф-анималист из Новосибирска</div>
                     <div class="buttons">
-                        <a class="underline underline-1" href={% url "index" %}><div>Фотографии</div></a>
+                        <a class="underline underline-1" href={% url "index" %}><div>Галерея</div></a>
                         <a class="underline underline-2" href=""><div>Открытки</div></a>
                         <a class="underline underline-3" href={% url "about" %}><div>Обо мне</div></a>
                         <a class="underline underline-4" href=""><div>Контакты</div></a>     

@@ -90,7 +90,7 @@ body {color: #585F77;
 .underline{
     display: flex;
     position: relative;
-    width: 250px;
+    width: 230px;
     justify-content: center;
     padding-bottom: 10px;
 }
@@ -109,7 +109,7 @@ body {color: #585F77;
     position: absolute;
     left: 0%;
     bottom: 0;
-    width: 250px;
+    width: 230px;
     height: 4px;
     border-radius: 10px;
 }
@@ -140,24 +140,64 @@ body {color: #585F77;
     margin: auto;
 }
 
-.main_background{
+.main_body{
     width: 1120px;
     height: 700px;
     background-color: white;
     display: flex;
     position: relative;
+    box-sizing: border-box;
+}
+
+
+.hello{
+    position: absolute;
+    left: 610px;
+    top: 40px;
+    font-size: 120px;
+    color: #292D38;
+}
+
+.dots{
+    position: absolute;
+    top: 90px;
+    right: 100px;
 }
 
 .text_box{
-    width: 570px;
-    height: 280px;
-    background-color: #A2BAF5;
-    background-origin: content-box;
-    border: #8F9ABD;
-    border-width: 1px;
     position: absolute;
-    top: 160px;
-    right: 220px;
+    top: 285px;
+    left: 450px;
+    width: 570px;
+    height: 290px;
+    padding-left: 25px;
+    padding-top: 35px;
+    background-color: white;
+    background-origin: content-box;
+    border: 1px solid;
+    border-color: #8F9ABD;
+    line-height: 24px;
+    box-sizing: border-box;
+}
+
+.text_header{
+    font-size: 33px;
+}
+
+.text_main{
+    padding-top: 30px;
+    padding-left: 7px;
+    padding-right: 30px;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    box-sizing: border-box;
+}
+
+.image_box{
+    position: absolute;
+    top: 120px;
+    left: 100px;
 }
 
 

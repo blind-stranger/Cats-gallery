@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
         <link rel="stylesheet" href="{% static 'css/styles_about.css' %}">
-        <link rel="stylesheet" id="fontawesome-css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css?ver=1.3.3" type="text/css" media="all">
+        <link rel="icon" type="image/png" sizes="32x32" href="{% static './favicon.png' %}">
         <meta charset="UTF-8">
         <title>Photography — Sofya Alexeeva</title>
     </head>
@@ -17,23 +17,27 @@
                 <header>
                     <div class='logo'>
                         <div class="logo-container">              
-                            <img src="{% static "Logo-1.jpg" %}" alt="" width="">
+                            <img src="{% static "Logo.jpg" %}" alt="" width="">
                             <div class="logo-gradient gradientText is__animated">photo</div>
                         </div>
-
                     </div>
                     <div class="sentence">Фотограф-анималист из Новосибирска</div>
                     <div class="buttons">
-                        <a class="underline underline-1" href={% url "index" %}><div>Фотографии</div></a>
+                        <a class="underline underline-1" href={% url "index" %}><div>Галерея</div></a>
                         <a class="underline underline-2" href=""><div>Открытки</div></a>
                         <a class="underline underline-3" href={% url "about" %}><div>Обо мне</div></a>
                         <a class="underline underline-4" href=""><div>Контакты</div></a>     
                     </div>
                 </header>
                 <div class="box_main">
-                    <div class="main_background">
+                    <div class="main_body">
                         <div class="image_box"><img src="{% static "Portrait.jpg" %}" alt=""></div>
-                        <div class="text_box"></div>
-                        <div class="dots"></div>
+                        <div class="hello">Hello</div>
+                        <div class="text_box"> 
+                            <div class="text_header">Меня зовут Софья</div>
+                            <div class="text_main">Мне 23, я родом из Новосибирска, и у меня есть маленькая страсть - общение с животными. А еще я безумно люблю фотографировать. Я искренне верю, что животные помогают человеку стать лучше. Цель этого сайта - показать вам мои работы, и доказать, что все дворняшки - милашки!
+                            </div>
+                        </div>
+                        <div class="dots"><img src="{% static "Elipses.jpg" %}" alt=""></div>
                     </div>
                 </div>
