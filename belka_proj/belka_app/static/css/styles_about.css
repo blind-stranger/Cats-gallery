@@ -80,7 +80,7 @@ body {color: #585F77;
     width: 100%;
     display: flex;
     justify-content: space-between;
-
+    margin-bottom: 335px;
 }
 .buttons a{
     text-decoration: none;
@@ -132,39 +132,25 @@ body {color: #585F77;
 
 
 .background{
-    background-image: url(../Background.jpg);
+    background-image: url(../Background_about.jpg);
 }
 
 .box_main {
     width: 90%;
     margin: auto;
-    padding-top: 150px;
 }
 
-.box_pict {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+.main_background{
+    width: 1120px;
+    height: 700px;
+    background-color: white;
 }
 
-.image {
-    width: 340px;
-}
-
-.image img {
-    border-radius: 10px;
-    max-width: 100%;
-    max-height: 100%;
-    cursor: pointer;
-    transition: 0.15s;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.image img:hover{
-    transform: scale(1.02);
-}
-
-
-.babagundal{
-    box-shadow: 0px 10px 65px 0px rgb(236, 216, 255);
+.text_box{
+    width: 570px;
+    height: 280px;
+    background-color: #A2BAF5;
+    background-origin: content-box;
+    border: #8F9ABD;
+    border-width: 1px;
 }
