@@ -30,7 +30,7 @@
                         <a class="underline underline-4" href=""><div>Контакты</div></a>     
                     </div>
                 </header>
-                <div class="box_main">
+                {% comment %} <div class="box_main">
                     <div class="box_pict">
                         <div class="image">
                             <img src="{{ photos.0.image.url }}" alt="" width="">
@@ -53,8 +53,21 @@
                             <img src="{{ photos.5.image.url }}" alt="">
                         </div>
                     </div>
-                </div>
+                </div> {% endcomment %}
             </div>
         </div>
+        <div class="grid">
+            <div class="grid-item grid-item--height1"></div>
+            <div class="grid-item grid-item--height2"></div>
+            <div class="grid-item grid-item--height3"></div>
+            <div class="grid-item grid-item--height2"></div>
+            <div class="grid-item grid-item--height1"></div>
+            <div class="grid-item grid-item--height1"></div>
+            <div class="grid-item grid-item--height2"></div>
+            <div class="grid-item grid-item--height3"></div>
+            <div class="grid-item grid-item--height1"></div>
+          </div>
     </body>
+<script src="{% static 'js/imagerow.min.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
 </html>
