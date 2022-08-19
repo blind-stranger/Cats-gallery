@@ -146,7 +146,7 @@ body {color: #585F77;
 }
 
 .image img:hover {
-    transform: scale(1.015);
+    transform: scale(1.02);
 }
 
 .grid-parent {
