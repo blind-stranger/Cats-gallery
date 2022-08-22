@@ -130,6 +130,16 @@ body {color: #585F77;
     background: linear-gradient(90deg, v 0%, rgba(162,186,245,1) 50%, rgba(166,191,252,1) 100%);
 }
 
+.shadow {
+    position: absolute;
+    z-index: -1;
+    height: 15px;
+    width: 150px;
+    top: 27%;
+    background-color: #FFE6D6;
+    border-radius: 10px;
+    box-shadow: 0px 4px 40px 0px #FFB07F;
+}
 
 .background{
     background-image: url(../Background_about.jpg);
@@ -194,10 +204,12 @@ body {color: #585F77;
     box-sizing: border-box;
 }
 
+
 .image_box{
     position: absolute;
     top: 120px;
     left: 100px;
 }
+
 
 
