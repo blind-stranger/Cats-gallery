@@ -23,7 +23,7 @@
                 </div>
                 <div class="sentence">Фотограф-анималист из Новосибирска</div>
                 <div class="buttons">
-                    <a class="underline underline-1" href={% url "index" %}><div>Фотографии</div><div class="shadow"></div></a>
+                    <a class="underline underline-1" href={% url "index" %}><div>Фотографии</div></a>
                     <a class="underline underline-2" href=""><div>Открытки</div></a>
                     <a class="underline underline-3" href={% url "about" %}><div>Обо мне</div></a>
                     <a class="underline underline-4" href=""><div>Контакты</div></a>     
@@ -34,43 +34,29 @@
             <div class="container">
                 <div class="grid-parent">
                     <div class="grid" id="gallery">
-                        {% comment %} <div class="grid-col">
-                            <a data-id="0" onclick="pswpLightbox.loadAndOpen(0);return false;" data-pswp-width="1669" data-pswp-height="2500" target="_blank" href="{{ photos.4.image.url }}"><div class="grid-item image"><img src="{{ photos.4.image.url }}" alt=""></div></a>
-                            <a data-id="3" onclick="pswpLightbox.loadAndOpen(3);return false;" data-pswp-width="1669" data-pswp-height="2500" target="_blank" href="{{ photos.2.image.url }}"><div class="grid-item image"><img src="{{ photos.2.image.url }}" alt=""></div></a>
-                            <a data-id="6" onclick="pswpLightbox.loadAndOpen(6);return false;" data-pswp-width="1669" data-pswp-height="2500" target="_blank" href="{{ photos.3.image.url }}"><div class="grid-item image"><img src="{{ photos.3.image.url }}" alt=""></div></a>
-                            
-                        </div>
                         <div class="grid-col">
-                            <a data-id="1" onclick="pswpLightbox.loadAndOpen(1);return false;" data-index="2" data-pswp-width="1669" data-pswp-height="2186" target="_blank" href="{{ photos.1.image.url }}"><div class="grid-item image"><img src="{{ photos.1.image.url }}" alt=""></div></a>
-                            <a data-id="4" onclick="pswpLightbox.loadAndOpen(4);return false;" data-pswp-width="1920" data-pswp-height="1280" target="_blank" href="{{ photos.8.image.url }}"><div class="grid-item image"><img src="{{ photos.8.image.url }}" alt=""></div></a>
-                            <a data-id="7" onclick="pswpLightbox.loadAndOpen(7);return false;" data-pswp-width="1669" data-pswp-height="2500" target="_blank" href="{{ photos.0.image.url }}"><div class="grid-item image"><img src="{{ photos.0.image.url }}" alt=""></div></a>
-                            <a data-id="9" onclick="pswpLightbox.loadAndOpen(9);return false;" data-pswp-width="1280" data-pswp-height="1920" target="_blank" href="{{ photos.9.image.url }}"><div class="grid-item image"><img src="{{ photos.9.image.url }}" alt=""></div></a>
-                        </div>
-                        <div class="grid-col">
-                            <a data-id="2" onclick="pswpLightbox.loadAndOpen(2);return false;" data-index="3" data-pswp-width="1920" data-pswp-height="1280" target="_blank" href="{{ photos.6.image.url }}"><div class="grid-item image"><img src="{{ photos.6.image.url }}" alt=""></div></a>
-                            <a data-id="5" onclick="pswpLightbox.loadAndOpen(5);return false;" data-pswp-width="1669" data-pswp-height="2500" target="_blank" href="{{ photos.5.image.url }}"><div class="grid-item image"><img src="{{ photos.5.image.url }}" alt=""></div></a>
-                            <a data-id="8" onclick="pswpLightbox.loadAndOpen(8);return false;" data-pswp-width="1920" data-pswp-height="1280" target="_blank" href="{{ photos.7.image.url }}"><div class="grid-item image"><img src="{{ photos.7.image.url }}" alt=""></div></a>
-                            <a data-id="10" onclick="pswpLightbox.loadAndOpen(10);return false;" data-pswp-width="1280" data-pswp-height="1920" target="_blank" href="{{ photos.10.image.url }}"><div class="grid-item image"><img src="{{ photos.10.image.url }}" alt=""></div></a>
-                        </div>  {% endcomment %}
-                        
-                        <div class="grid-col">
-                            {% for photo in column_1%}
-                                <a data-id="0" onclick="pswpLightbox.loadAndOpen(0);return false;" data-pswp-width="1669" data-pswp-height="2500" target="_blank" href="{{photo.image.url}}"><div class="grid-item image"><img src="{{photo.image.url}}" alt=""></div></a>
+                            {% for i in column_1%}
+                                <a data-id="{{i.priority}}" onclick="pswpLightbox.loadAndOpen({{i.priority}});return false;" data-pswp-width="{{i.image.width}}" data-pswp-height="{{i.image.height}}" 
+                                target="_blank" href="{{i.image.url}}"><div class="grid-item image"><img src="{{i.image.url}}" alt=""></div></a>
                             {% endfor %}
                         </div>
                         <div class="grid-col">
-                            {% for photo in column_2%}
-                                <a data-id="0" onclick="pswpLightbox.loadAndOpen(0);return false;" data-pswp-width="1669" data-pswp-height="2500" target="_blank" href="{{photo.image.url}}"><div class="grid-item image"><img src="{{photo.image.url}}" alt=""></div></a>
+                            {% for i in column_2%}
+                                <a data-id="{{i.priority}}" onclick="pswpLightbox.loadAndOpen({{i.priority}});return false;" data-pswp-width="{{i.image.width}}" data-pswp-height="{{i.image.height}}" 
+                                target="_blank" href="{{i.image.url}}"><div class="grid-item image"><img src="{{i.image.url}}" alt=""></div></a>
                             {% endfor %}
                         </div>
                         <div class="grid-col">
-                            {% for photo in column_3%}
-                                <a data-id="0" onclick="pswpLightbox.loadAndOpen(0);return false;" data-pswp-width="1669" data-pswp-height="2500" target="_blank" href="{{photo.image.url}}"><div class="grid-item image"><img src="{{photo.image.url}}" alt=""></div></a>
+                            {% for i in column_3%}
+                                <a data-id="{{i.priority}}" onclick="pswpLightbox.loadAndOpen({{i.priority}});return false;" data-pswp-width="{{i.image.width}}" data-pswp-height="{{i.image.height}}" 
+                                target="_blank" href="{{i.image.url}}"><div class="grid-item image"><img src="{{i.image.url}}" alt=""></div></a>
                             {% endfor %}
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
+        
         <script type="module" src="{% static 'js/script.js' %}"></script>
     </body>
 </html>

@@ -2,7 +2,7 @@ from django.shortcuts import render
 from belka_app.models import Photo
 
 def index(request):
-    photos = Photo.objects.all()
+    photos = Photo.objects.all().order_by('priority')
     count = 0
     column_1 = []
     column_2 = []
