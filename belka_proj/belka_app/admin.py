@@ -1,4 +1,10 @@
 from django.contrib import admin
 from belka_app.models import Photo
 
-admin.site.register(Photo)
+
+class PhotoAdmin(admin.ModelAdmin):
+    list_display = ['__str__', 'priority', 'thumbnail']
+    list_editable = ['priority', 'thumbnail']
+
+
+admin.site.register(Photo, PhotoAdmin)
