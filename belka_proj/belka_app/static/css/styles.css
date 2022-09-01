@@ -11,7 +11,7 @@ body {color: #585F77;
 
 .background {
     background-image: url(../Background.jpg);
-    height: 2070px;
+    height: 3500px;
 }
 
 .logo {
@@ -99,6 +99,11 @@ body {color: #585F77;
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+    transition: 0.15s;
+}
+
+.button_r:hover {
+    transform: scale(1.05);
 }
 
 .btn_1{
