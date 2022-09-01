@@ -1,5 +1,10 @@
 from django.shortcuts import render
 from belka_app.models import Photo
+from django.views.generic import ListView
+
+# class PhotosView(ListView):
+#     paginate_by = 2
+#     model = Photo
 
 def index(request):
     photos = Photo.objects.all().order_by('priority')
@@ -27,5 +32,11 @@ def index(request):
 
     return render(request, 'index.html', context=context_photo_dict)
 
+def postcards(request):
+    return render(request, 'postcards.html', context={})
+
 def about(request):
     return render(request, 'about me.html', context={})
+
+def contact(request):
+    return render(request, 'contact.html', context={})

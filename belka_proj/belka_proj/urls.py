@@ -16,12 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from belka_app.views import index
+from belka_app.views import postcards
 from belka_app.views import about
+from belka_app.views import contact
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name="index"),
-    path('about_me/', about, name="about")
+    path('postcards/', postcards, name="postcards"),
+    path('about_me/', about, name="about"),
+    path('contact/', contact, name="contact")
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

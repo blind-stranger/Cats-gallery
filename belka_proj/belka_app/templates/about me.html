@@ -23,10 +23,11 @@
                     </div>
                     <div class="sentence">Фотограф-анималист из Новосибирска</div>
                     <div class="buttons">
-                        <a class="underline underline-1" href={% url "index" %}><div>Фотографии</div></a>
-                        <a class="underline underline-2" href=""><div>Открытки</div></a>
-                        <a class="underline underline-3" href={% url "about" %}><div>Обо мне</div></a>
-                        <a class="underline underline-4" href=""><div>Контакты</div></a>     
+                        <a href={% url "index" %}><div class="button_r btn_1">Фотографии</div></a>
+                        <a href={% url "postcards" %}><div class="button_r btn_2">Открытки</div></a>
+                        <a href={% url "about" %}><div class="button_r btn_3" id="btn_3_active">Обо мне</div></a>
+                        <a href={% url "contact" %}><div class="button_r btn_4">Контакты</div></a> 
+                        {% comment %} <a class="underline underline-3" href={% url "about" %}><div>Обо мне</div></a> {% endcomment %}    
                     </div>
                 </header>
                 <div class="box_main">
@@ -35,7 +36,9 @@
                         <div class="hello">Hello</div>
                         <div class="text_box"> 
                             <div class="text_header">Меня зовут Софья</div>
-                            <div class="text_main">Мне 23, я родом из Новосибирска, и у меня есть маленькая страсть - общение с животными. А еще я безумно люблю фотографировать. Я искренне верю, что животные помогают человеку стать лучше. Цель этого сайта - показать вам мои работы, и доказать, что все дворняшки - милашки!
+                            <div class="text_main"> Я фотографирую хвостиков в Новосибирске. Я искренне верю, что животные помогают человеку стать лучше. 
+                                А еще, что все дворняшки - милашки:)
+                                На этом сайте я постаралась собрать свои лучшие работы с пушистиками!
                             </div>
                         </div>
                         <div class="dots"><img src="{% static "Elipses.jpg" %}" alt=""></div>
