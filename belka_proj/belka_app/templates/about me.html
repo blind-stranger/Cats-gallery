@@ -6,6 +6,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+        <link rel="stylesheet" href="{% static 'css/styles_main.css' %}">
         <link rel="stylesheet" href="{% static 'css/styles_about.css' %}">
         <link rel="icon" type="image/png" sizes="32x32" href="{% static './favicon.png' %}">
         <meta charset="UTF-8">
@@ -26,8 +27,7 @@
                         <a href={% url "index" %}><div class="button_r btn_1">Фотографии</div></a>
                         <a href={% url "postcards" %}><div class="button_r btn_2">Открытки</div></a>
                         <a href={% url "about" %}><div class="button_r btn_3" id="btn_3_active">Обо мне</div></a>
-                        <a href={% url "contact" %}><div class="button_r btn_4">Контакты</div></a> 
-                        {% comment %} <a class="underline underline-3" href={% url "about" %}><div>Обо мне</div></a> {% endcomment %}    
+                        <a href={% url "contact" %}><div class="button_r btn_4">Контакты</div></a>    
                     </div>
                 </header>
                 <div class="box_main">
