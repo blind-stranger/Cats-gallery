@@ -73,7 +73,7 @@
     100% { background-position: 0% 0% }
   }
   .gradientText.__animated {
-    background-image: linear-gradient(90deg, #FFCAA9,#F98D97, #FF6ABA);
+    background-image: linear-gradient(90deg, #FFCAA9, #F98D97, #FF6ABA, #A394FF, #6995FF);
     background-size: 500% 500%;
     animation: move-background 10s linear infinite;
   }
