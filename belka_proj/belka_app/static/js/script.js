@@ -27,15 +27,13 @@ for (let i = 0; i < maximum; i++) {
   }
 }
 
-
-
 const lightbox = new PhotoSwipeLightbox({
   dataSource: images,
   pswpModule: () => import('./photoswipe.esm.js'),
   wheelToZoom: true,
   padding: { top: 20, bottom: 20, left: 100, right: 100 },
   secondaryZoomLevel: "fit",
-  maxZoomLevel: 2,
+  maxZoomLevel: 1,
   wheelToZoom: true
 });
 lightbox.init();
