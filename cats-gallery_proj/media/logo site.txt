@@ -1,0 +1,10 @@
+.logo{
+    margin-left: 400px;
+}
+.logo h1{
+    font-size: 68px;
+    background: rgb(173,215,33);
+    background: linear-gradient(329deg, rgba(173,215,33,1) 0%, rgba(174,208,37,1) 33%, rgba(159,193,49,1) 100%);
+    width: 50px;
+    line-height: 1.0em;
+}
