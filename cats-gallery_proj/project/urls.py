@@ -1,4 +1,4 @@
-"""belka_proj URL Configuration
+"""project URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from belka_app.views import index
-from belka_app.views import postcards
-from belka_app.views import about
-from belka_app.views import contact
+from app.views import index
+from app.views import postcards
+from app.views import about
+from app.views import contact
 from django.conf import settings
 from django.conf.urls.static import static
 

@@ -1,10 +1,6 @@
 from django.shortcuts import render
-from belka_app.models import Photo
+from app.models import Photo
 from django.views.generic import ListView
-
-# class PhotosView(ListView):
-#     paginate_by = 2
-#     model = Photo
 
 def index(request):
     photos = Photo.objects.all().order_by('priority')
